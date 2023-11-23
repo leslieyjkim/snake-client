@@ -15,7 +15,7 @@ const connect = function () {
     port: 50541, // PORT number here,
   });
   conn.on("connect", () => {
-    conn.write("Name: YJ🐍");
+    // conn.write("Name: YJ🐍");
   });
   // conn.write(moves.u);
   // setTimeout(() => {}, 500);
