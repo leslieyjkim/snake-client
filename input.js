@@ -7,11 +7,9 @@ const setupInput = function (conn) {
   stdin.setEncoding("utf8");
   stdin.resume();
   stdin.on("data", handleUserInput);
-
   return stdin;
 };
 const handleUserInput = function (data) {
-  // your code here
   console.log(data);
   let output = "";
   if (data === "\u0003") {
@@ -19,6 +17,12 @@ const handleUserInput = function (data) {
     process.exit();
   } else {
     switch (data) {
+      case "1":
+        output = "Say: Still Hungry!";
+        break;
+      case "2":
+        output = "Say: Still Going!";
+        break;
       case "w":
         output = "Move: up";
         break;
