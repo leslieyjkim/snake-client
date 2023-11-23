@@ -21,7 +21,7 @@ const handleUserInput = function (data) {
         output = "Say: Still Hungry!";
         break;
       case "2":
-        output = "Say: Still Going!";
+        output = "Say: Here we go!";
         break;
       case "w":
         output = "Move: up";
