@@ -7,11 +7,13 @@ const connect = function () {
     host: "165.227.47.243", // IP address here,
     port: 50541, // PORT number here,
   });
-
+  conn.on("connect", () => {
+    console.log("Name:  YJ🐍");
+    conn.write("Name: YJ🐍");
+  });
   // interpret incoming data as text
   conn.setEncoding("utf8");
-
   return conn;
 };
 
-module.exports = connect;
+module.exports = { connectFunc2: connect };
